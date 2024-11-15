@@ -1,0 +1,112 @@
+//Defining color styles
+$light: #ffff; 
+$dark: #111729;
+$grey-100: #F2F5F9;
+$grey-200: #4A5567;
+
+//Defining typography
+@mixin header {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+@mixin body {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+@mixin body-bold {
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+}
+
+//Resetting spacing & changing box sizing
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    @include header;
+}
+
+p {
+    @include body; 
+    color: $grey-200
+}
+
+p.card-content__author__name-title__name {
+    @include body-bold();
+}
+
+body {
+    background-color: $grey-100;
+    padding: 96px 0 0 0;
+}
+
+main {
+    background-color: $light;
+    width: 418px;
+    border-radius: 16px;
+    margin: 0 auto;
+    
+    //Adding the pattern used under the text stuff
+    .card-image {
+        position: relative;
+    
+        .card-image__pattern {
+            background-image: url('../images/white-overlay.svg');
+            background-repeat: no-repeat;
+            width: 418px;
+            height: 100%;
+            position: absolute;
+            top: 213px;
+        }
+
+        img {
+            border-radius: 16px 16px 0 0;
+        }
+    }
+
+    .card-content {
+        
+        .card-content__text {
+            padding: 0 32px 24px 32px;
+
+            h1 {
+                margin-bottom: 8px;
+            }
+        }
+
+        .card-content__author {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding: 24px 32px 24px 32px;
+            border-top: 1px solid $grey-100;
+
+            img {
+                border-radius: 56px;
+                width: 45px;
+                border: 4px solid $grey-100;
+            }
+
+            .card-content__author__name-title__name {
+                color: $dark;
+            }
+        }
+    }
+}
+
+
+
+
+
+

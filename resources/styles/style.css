@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: #4A5567;
+}
+
+p.card-content__author__name-title__name {
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+}
+
+body {
+  background-color: #F2F5F9;
+  padding: 96px 0 0 0;
+}
+
+main {
+  background-color: white;
+  width: 418px;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+main .card-image {
+  position: relative;
+}
+main .card-image .card-image__pattern {
+  background-image: url("../images/white-overlay.svg");
+  background-repeat: no-repeat;
+  width: 418px;
+  height: 100%;
+  position: absolute;
+  top: 213px;
+}
+main .card-image img {
+  border-radius: 16px 16px 0 0;
+}
+main .card-content .card-content__text {
+  padding: 0 32px 24px 32px;
+}
+main .card-content .card-content__text h1 {
+  margin-bottom: 8px;
+}
+main .card-content .card-content__author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 24px 32px 24px 32px;
+  border-top: 1px solid #F2F5F9;
+}
+main .card-content .card-content__author img {
+  border-radius: 56px;
+  width: 45px;
+  border: 4px solid #F2F5F9;
+}
+main .card-content .card-content__author .card-content__author__name-title__name {
+  color: #111729;
+}/*# sourceMappingURL=style.css.map */
