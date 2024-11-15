@@ -16,6 +16,7 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 1em;
+  line-height: 1.5;
   color: #4A5567;
 }
 
@@ -71,4 +72,7 @@ main .card-content .card-content__author img {
 }
 main .card-content .card-content__author .card-content__author__name-title__name {
   color: #111729;
+}
+main .card-content .card-content__author .card-content__author__name-title__title {
+  font-size: 0.8em;
 }/*# sourceMappingURL=style.css.map */
